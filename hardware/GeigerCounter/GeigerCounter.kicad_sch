@@ -4457,7 +4457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2765816.html"
 			(at 113.03 41.91 0)
 			(effects
 				(font
@@ -4468,6 +4468,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 113.03 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2765816"
+			(at 113.03 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
