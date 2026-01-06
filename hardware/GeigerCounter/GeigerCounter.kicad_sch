@@ -5,6 +5,113 @@
 	(uuid "ef6c1a42-0b6c-4af0-9292-9f03677a4795")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_GameBoy:GameBoy_GamePak_DMG-09"
 			(pin_names
 				(offset 1.016)
@@ -2580,131 +2687,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "Vcc=5V!"
 		(exclude_from_sim no)
@@ -2720,7 +2702,7 @@
 	)
 	(text "400V"
 		(exclude_from_sim no)
-		(at 93.726 40.64 0)
+		(at 94.996 40.894 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -2730,7 +2712,7 @@
 		)
 		(uuid "da39a813-9cfe-4b57-bda7-5181dc058747")
 	)
-	(text "D0-D7: data\nADC6,ADC7: data\nWR|RD|CS|VIN: control\nCLK: button\nRES: reset <-> pull low\nVIN-A15: indicator"
+	(text "D0-D7: data\nADC6,ADC7: data\nWR|RD|CS|VIN: control\nCLK: button\nRES: reset <-> pull low\nVIN-A14: indicator"
 		(exclude_from_sim no)
 		(at 213.106 46.736 0)
 		(effects
@@ -2788,12 +2770,6 @@
 		(uuid "109a00e6-473e-402d-9387-b5153bd29d41")
 	)
 	(junction
-		(at 85.09 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14f7c617-4ffa-4bac-a647-c4ff346707f3")
-	)
-	(junction
 		(at 146.05 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2818,12 +2794,6 @@
 		(uuid "48143f8f-37af-4cff-824e-e45f453d4458")
 	)
 	(junction
-		(at 45.72 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "55703721-d8c4-4a8e-8c19-4003040665a3")
-	)
-	(junction
 		(at 165.1 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2834,6 +2804,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7717e316-a0f6-483f-9cb9-3613197edc42")
+	)
+	(junction
+		(at 45.72 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f47d186-1eaf-40d1-9f4f-b2826deb9d8e")
+	)
+	(junction
+		(at 91.44 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "878ee1d0-2eab-4c41-bbbe-0a9fc78192c8")
 	)
 	(junction
 		(at 77.47 52.07)
@@ -2852,6 +2834,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8ce548a-531b-4ed2-8341-ed6a99628e02")
+	)
+	(junction
+		(at 83.82 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2dd4ac8-2d17-4731-a184-29d3eca4a2a4")
 	)
 	(junction
 		(at 154.94 53.34)
@@ -2900,12 +2888,20 @@
 		(uuid "1e7d0f3a-0519-4ffc-90e4-584a177f5c96")
 	)
 	(no_connect
+		(at 213.36 137.16)
+		(uuid "251df28f-b502-4669-b725-500a4ca7ee73")
+	)
+	(no_connect
 		(at 33.02 57.15)
 		(uuid "46dcd06f-bdb2-4a7a-a1c1-a3a44ec9b7a9")
 	)
 	(no_connect
 		(at 213.36 86.36)
 		(uuid "524674cd-951c-48e4-bfae-46ae27c1cd9e")
+	)
+	(no_connect
+		(at 213.36 132.08)
+		(uuid "582789b5-2e67-4ebd-84e7-d771ea262222")
 	)
 	(no_connect
 		(at 213.36 104.14)
@@ -2916,8 +2912,24 @@
 		(uuid "793fd515-c179-4304-8653-3b4832bddb63")
 	)
 	(no_connect
+		(at 213.36 129.54)
+		(uuid "a7c9ec52-fad9-4818-84ce-af3260a01d24")
+	)
+	(no_connect
+		(at 213.36 127)
+		(uuid "bf95cfe1-58b7-4e38-a4a9-c8d96982eb54")
+	)
+	(no_connect
 		(at 213.36 96.52)
 		(uuid "c5240499-dd85-4dfd-be1f-268f946ec903")
+	)
+	(no_connect
+		(at 213.36 134.62)
+		(uuid "c86776f1-24ec-46f0-a47f-7035fa67954d")
+	)
+	(no_connect
+		(at 213.36 116.84)
+		(uuid "d0959844-26f4-4d96-8127-03d1eceb3f0a")
 	)
 	(no_connect
 		(at 213.36 99.06)
@@ -2934,6 +2946,18 @@
 	(no_connect
 		(at 213.36 106.68)
 		(uuid "e92907a2-0b50-4935-b16e-9dc0b84c89c8")
+	)
+	(no_connect
+		(at 213.36 139.7)
+		(uuid "f00f6b2a-28b1-4689-b2b6-f464fbfedb00")
+	)
+	(no_connect
+		(at 213.36 124.46)
+		(uuid "ff4c6dc2-d64e-4c28-b75c-c17ee955f093")
+	)
+	(no_connect
+		(at 213.36 121.92)
+		(uuid "ff8f099f-0fdf-4e37-aae1-be7b83220442")
 	)
 	(wire
 		(pts
@@ -3057,7 +3081,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 41.91) (xy 96.52 41.91)
+			(xy 88.9 41.91) (xy 91.44 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3067,7 +3091,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 30.48) (xy 88.9 34.29)
+			(xy 88.9 24.13) (xy 88.9 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3134,6 +3158,16 @@
 			(type default)
 		)
 		(uuid "3a313e79-34de-4c14-878c-5e47820e04b8")
+	)
+	(wire
+		(pts
+			(xy 80.01 36.83) (xy 80.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bf18ac2-97b1-48cf-88f1-55ccbb6cb532")
 	)
 	(wire
 		(pts
@@ -3317,6 +3351,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 24.13) (xy 83.82 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f67c9e1-ad34-457c-80e6-02cee7b263da")
+	)
+	(wire
+		(pts
 			(xy 213.36 81.28) (xy 226.06 81.28)
 		)
 		(stroke
@@ -3377,6 +3421,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 24.13) (xy 88.9 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df0556a-02bb-4e97-91f7-0f46306541a2")
+	)
+	(wire
+		(pts
 			(xy 165.1 46.99) (xy 165.1 53.34)
 		)
 		(stroke
@@ -3407,7 +3461,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 30.48) (xy 85.09 30.48)
+			(xy 80.01 24.13) (xy 83.82 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3457,16 +3511,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 30.48) (xy 88.9 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a918e082-226c-45fc-97cd-c8c11331c90b")
-	)
-	(wire
-		(pts
 			(xy 105.41 41.91) (xy 109.22 41.91)
 		)
 		(stroke
@@ -3477,7 +3521,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 34.29) (xy 80.01 30.48)
+			(xy 80.01 29.21) (xy 80.01 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3504,16 +3548,6 @@
 			(type default)
 		)
 		(uuid "ab890db0-dcc9-4aa9-943d-a9f511c23957")
-	)
-	(wire
-		(pts
-			(xy 213.36 119.38) (xy 226.06 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab9e2769-19d1-41bd-bf7e-77803f892d68")
 	)
 	(wire
 		(pts
@@ -3557,6 +3591,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 40.64) (xy 88.9 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf63627c-8807-43e2-8aeb-a044c241768d")
+	)
+	(wire
+		(pts
 			(xy 213.36 101.6) (xy 226.06 101.6)
 		)
 		(stroke
@@ -3574,6 +3618,16 @@
 			(type default)
 		)
 		(uuid "c2ae433d-18cc-4ec8-bf10-0b7586391697")
+	)
+	(wire
+		(pts
+			(xy 91.44 41.91) (xy 96.52 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5ebd83c-026a-4faa-9a65-6c622bf38713")
 	)
 	(wire
 		(pts
@@ -3604,16 +3658,6 @@
 			(type default)
 		)
 		(uuid "ca71b10a-ab60-4234-9ba2-c8f5883bc191")
-	)
-	(wire
-		(pts
-			(xy 85.09 27.94) (xy 85.09 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca91fd4c-fd0d-4d3b-8bdc-7e8fa7f092c2")
 	)
 	(wire
 		(pts
@@ -3727,6 +3771,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 119.38) (xy 226.06 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8a55fcd-03d5-4f8e-a948-4bf5a96fd040")
+	)
+	(wire
+		(pts
 			(xy 213.36 83.82) (xy 226.06 83.82)
 		)
 		(stroke
@@ -3794,6 +3848,16 @@
 			(justify left bottom)
 		)
 		(uuid "18a1f467-a97e-4efa-98f0-2703a22c9429")
+	)
+	(label "INT"
+		(at 207.01 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c94f6ab-22c6-4b98-afd1-a5ae30548709")
 	)
 	(label "CARD_A6"
 		(at 213.36 93.98 0)
@@ -4094,7 +4158,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "01362e44-8c7d-4e34-9c53-79af9f5e9476")
+		(uuid "0618c1f7-2bd8-4270-9df7-e97771863a0f")
 		(property "Reference" "#PWR09"
 			(at 146.05 60.96 0)
 			(effects
@@ -4140,77 +4204,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "01fa9286-791b-4f91-a48d-7b421aca4292")
+			(uuid "f2c5007e-5606-422c-b713-440f313a7041")
 		)
 		(instances
 			(project "GeigerCounter"
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 45.72 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01c9c52c-ace9-4a69-9bec-006f1ae70f0e")
-		(property "Reference" "#PWR08"
-			(at 45.72 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 42.418 44.958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa6c18a4-d5d0-46f4-9c1c-ea4917baf962")
-		)
-		(instances
-			(project "GeigerCounter"
-				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4352,72 +4351,6 @@
 			(project ""
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27c08f35-234b-46dc-ab32-fee750c51c2f")
-		(property "Reference" "#PWR04"
-			(at 29.21 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "376536ca-ab22-4014-a604-3adca3204843")
-		)
-		(instances
-			(project "GeigerCounter"
-				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4569,6 +4502,137 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 64.77 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "351f21e0-4968-47a8-b324-e052bf1093c1")
+		(property "Reference" "#PWR04"
+			(at 64.77 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fe52051-a6bf-45e1-905e-8cc05d980ae1")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 45.72 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3fda692b-6016-41eb-af95-4a7aac5e74ce")
+		(property "Reference" "#PWR08"
+			(at 45.72 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 42.418 45.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 45.72 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23cd96d1-69c8-447a-b33c-1b571c310480")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 64.77 82.55 0)
 		(unit 1)
@@ -4707,7 +4771,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 88.9 38.1 0)
+		(at 88.9 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4715,7 +4779,7 @@
 		(dnp no)
 		(uuid "61b953a5-9e55-4b06-b48d-51e73983f64e")
 		(property "Reference" "L1"
-			(at 85.852 35.814 0)
+			(at 85.852 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,8 +4787,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10mH"
-			(at 83.058 40.132 0)
+		(property "Value" "4.7mH"
+			(at 82.296 30.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,8 +4796,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRR1208_12.7x12.7mm"
-			(at 88.9 38.1 0)
+		(property "Footprint" "EasyEDA:IND-SMD_L6.6-W4.4"
+			(at 88.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,8 +4805,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRR1208.pdf"
-			(at 88.9 38.1 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2042460.pdf"
+			(at 88.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +4815,16 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 88.9 38.1 0)
+			(at 88.9 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C168108"
+			(at 88.9 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4769,6 +4842,72 @@
 			(project ""
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 104.14 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "653fe00a-01b9-4560-ba45-c09c980069f3")
+		(property "Reference" "TP2"
+			(at 103.378 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 106.934 21.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+			(at 109.22 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 104.14 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c594bef-a83b-4c33-a290-2f45757f30c1")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4838,6 +4977,137 @@
 			(project "GeigerCounter"
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e86d152-1fab-43fa-aba2-f75a865fdc9f")
+		(property "Reference" "#PWR05"
+			(at 80.01 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57bc33a7-8eb7-4299-88ce-e5dcccfe03df")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 83.82 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f49a41e-81f0-44d1-a0fe-20f6d6ef3c6b")
+		(property "Reference" "#PWR01"
+			(at 83.82 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 80.518 21.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 83.82 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cebbbee4-e7ce-4990-85c1-d664206aef6f")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4925,6 +5195,138 @@
 			(project ""
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71f5fdc6-6286-4db1-adc3-4f6774b61a00")
+		(property "Reference" "#PWR07"
+			(at 105.41 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d52e71e-a1b8-4847-acfb-017e00ea98cc")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 29.21 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7273ea45-cf35-4b6a-bdda-623e554058e6")
+		(property "Reference" "#PWR02"
+			(at 29.21 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 29.21 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53ce7113-f54a-472b-8436-2bba1404e5ef")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5536,71 +5938,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a1e47ea7-cc23-4256-bedc-ca062c9de36e")
-		(property "Reference" "#PWR03"
-			(at 45.72 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 69.088 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f8f873ab-63cc-478e-8a99-0b8da62878bb")
-		)
-		(instances
-			(project "GeigerCounter"
-				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_BJT:MMBT3904")
 		(at 162.56 41.91 0)
 		(unit 1)
@@ -5746,17 +6083,161 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:L")
+		(at 88.9 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2b5c8ad-cf90-4caf-bcaa-df1474f5e9b5")
+		(property "Reference" "L2"
+			(at 85.852 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7mH"
+			(at 82.296 39.116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "EasyEDA:IND-SMD_L6.6-W4.4"
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C2042460.pdf"
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C168108"
+			(at 88.9 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1509e476-fefb-4cfb-aafd-40351d2e7e75")
+		)
+		(pin "1"
+			(uuid "cbab8c23-686d-4efd-a0c3-75d92549feac")
+		)
+		(instances
+			(project "GeigerCounter"
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "b99dc447-2594-4d2b-90ea-16d48bb978af")
+		(property "Reference" "TP1"
+			(at 90.678 36.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 94.234 36.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical"
+			(at 96.52 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5f3b4de-9f39-42d1-8c15-4d4ce31d4c1a")
+		)
+		(instances
+			(project ""
+				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 80.01 86.36 0)
+		(at 104.14 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b2d5c2b7-6292-4b97-9960-c0de31e2ef25")
-		(property "Reference" "#PWR02"
-			(at 80.01 92.71 0)
+		(uuid "c04a786c-9ae4-4374-aec0-364c242fdcf6")
+		(property "Reference" "#PWR010"
+			(at 104.14 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5765,7 +6246,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 91.44 0)
+			(at 104.14 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5773,7 +6254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 86.36 0)
+			(at 104.14 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5782,7 +6263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 86.36 0)
+			(at 104.14 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,7 +6272,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 86.36 0)
+			(at 104.14 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5800,29 +6281,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "564a51c1-6522-4c88-9b37-d3e4bf77c995")
+			(uuid "6de5da87-b257-40f6-8bef-819741a5a81f")
 		)
 		(instances
-			(project ""
+			(project "GeigerCounter"
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR02")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 85.09 27.94 0)
+		(lib_id "power:+5V")
+		(at 165.1 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d2374fb1-f5a8-49bf-b783-2260b1d352c7")
-		(property "Reference" "#PWR01"
-			(at 85.09 31.75 0)
+		(uuid "cdaf60a6-a4d8-4ff6-9462-7a75e07442d4")
+		(property "Reference" "#PWR012"
+			(at 165.1 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5830,8 +6311,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 85.09 22.86 0)
+		(property "Value" "+5V"
+			(at 165.1 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5839,7 +6320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 27.94 0)
+			(at 165.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5848,7 +6329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 27.94 0)
+			(at 165.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5856,8 +6337,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 85.09 27.94 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 165.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5866,12 +6347,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fdf79d9-f607-413c-8d3c-7543480f3496")
+			(uuid "69287ac5-b4ad-463c-92bf-5925352c070c")
 		)
 		(instances
-			(project ""
+			(project "GeigerCounter"
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR01")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5879,16 +6360,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 64.77 86.36 0)
+		(at 88.9 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dc26e818-5812-4905-8deb-1697dcec8d18")
+		(uuid "e162a117-79fa-48a5-92bf-462a0604fcc8")
 		(property "Reference" "#PWR06"
-			(at 64.77 92.71 0)
+			(at 88.9 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5897,7 +6378,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 64.77 91.44 0)
+			(at 88.9 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5905,7 +6386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 86.36 0)
+			(at 88.9 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5914,7 +6395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 86.36 0)
+			(at 88.9 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5923,7 +6404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 86.36 0)
+			(at 88.9 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5932,7 +6413,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6cd9e7cc-80e4-4499-b4c4-7d5aedfcdf46")
+			(uuid "dd577999-d87c-42b6-94f9-0d4f7ba57b58")
 		)
 		(instances
 			(project "GeigerCounter"
@@ -6020,138 +6501,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 105.41 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3cd853b-3101-453d-a260-12da1c984aa2")
-		(property "Reference" "#PWR07"
-			(at 105.41 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.41 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "67735f18-75f9-4c1a-b05d-f71ec05b3f7e")
-		)
-		(instances
-			(project "GeigerCounter"
-				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 88.9 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5446f34-9be2-4317-9aee-48201001f82f")
-		(property "Reference" "#PWR05"
-			(at 88.9 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 88.9 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e9bd8998-46f4-4486-9e6e-60575fc2c02c")
-		)
-		(instances
-			(project "GeigerCounter"
-				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 72.39 52.07 270)
 		(unit 1)
@@ -6219,17 +6568,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 165.1 27.94 0)
+		(lib_id "power:GND")
+		(at 45.72 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f2c75f13-76fe-4e9a-9f3e-8fc5513eec2f")
-		(property "Reference" "#PWR010"
-			(at 165.1 31.75 0)
+		(uuid "f9ca3320-46bb-456f-842a-a7d6ade20dd9")
+		(property "Reference" "#PWR03"
+			(at 45.72 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6237,8 +6585,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 165.1 22.86 0)
+		(property "Value" "GND"
+			(at 41.656 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6246,7 +6594,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 27.94 0)
+			(at 45.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6255,7 +6603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 27.94 0)
+			(at 45.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6263,8 +6611,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 165.1 27.94 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 45.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6273,12 +6621,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6390f484-df97-42cb-9901-d1dbf30beaea")
+			(uuid "583dd0d8-732e-4c1a-9d8e-f1fdafa71b0d")
 		)
 		(instances
 			(project "GeigerCounter"
 				(path "/ef6c1a42-0b6c-4af0-9292-9f03677a4795"
-					(reference "#PWR010")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6286,7 +6634,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 80.01 38.1 0)
+		(at 80.01 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6294,7 +6642,7 @@
 		(dnp no)
 		(uuid "fc8a106e-caeb-4ef9-bf62-d4172b414a2e")
 		(property "Reference" "R1"
-			(at 76.454 34.544 0)
+			(at 76.454 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6303,7 +6651,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 80.01 40.894 90)
+			(at 80.01 35.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6312,7 +6660,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 78.232 38.1 90)
+			(at 78.232 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6321,7 +6669,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 38.1 0)
+			(at 80.01 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6330,7 +6678,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 80.01 38.1 0)
+			(at 80.01 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
