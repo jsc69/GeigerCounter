@@ -58,3 +58,4 @@ production/
 *.lck
 fp-info-cache
 *auto_saved_files*
+*autosave*
